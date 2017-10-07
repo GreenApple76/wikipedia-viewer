@@ -23,7 +23,18 @@ $('.random').click(function() {
 	window.open('https://en.wikipedia.org/wiki/Special:Random');
 });
 
+// clear textbox for a new search when textbox is clicked
+// set focus on textbox to accept user input
+$('.searchBox').on('click', function() {
+	$(this).val("");
+	$(this).focus();
+});
+
 function search() {
+
+	// remove focus from textbox
+	$('.searchBox').blur();
+
 	// retrieve keyword
 	var keyword = $('.searchBox').val();
 	var url = 'https://en.wikipedia.org/w/api.php?origin=*&action=query&list=search&format=json&srsearch=';
