@@ -10,7 +10,7 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -22,7 +22,10 @@
         <!-- Add your site or application content here -->
         <div class="container">
             <h1>Wikipedia Viewer</h1>
-            <input type="text" class="searchBox"><button class="search">Search</button><button class="random">Get Random Topic</button>
+            <input type="text" class="searchBox">
+            <div class="buttons">
+                <button class="search">Search</button><button class="random">Random Topic</button>
+            </div>
             <div class="searchResults"></div>
         </div>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
